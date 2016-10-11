@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, Input} from "@angular/core";
 import {Todo} from "../../models/todo.model";
 
 @Component({
@@ -7,7 +7,7 @@ import {Todo} from "../../models/todo.model";
 })
 export class TodoContentComponent {
 
-  // @Input()
+  @Input()
   todos: Todo[];
 
   constructor() {

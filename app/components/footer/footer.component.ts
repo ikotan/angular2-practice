@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, Input} from "@angular/core";
 import {TodoService} from "../../services/todo.service";
 import {Todo} from "../../models/todo.model";
 
@@ -8,7 +8,7 @@ import {Todo} from "../../models/todo.model";
 })
 export class TodoFooterComponent {
 
-  // @Input()
+  @Input()
   todos: Todo[];
 
   constructor(private service: TodoService) {}
